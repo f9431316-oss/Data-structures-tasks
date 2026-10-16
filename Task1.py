@@ -1,4 +1,3 @@
-# 1
 def seconds_to_hms(seconds):
     hours = seconds // 3600
     minutes = (seconds % 3600) // 60
@@ -7,13 +6,11 @@ def seconds_to_hms(seconds):
     return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
 
 
-# 2
 def celsius_to_fahrenheit(celsius):
     fahrenheit = (celsius * 9 / 5) + 32
     return round(fahrenheit, 2)
 
 
-# 3
 def split_evenly(total, people):
     each = total // people
     remainder = total % people
@@ -21,7 +18,6 @@ def split_evenly(total, people):
     return each, remainder
 
 
-# 4
 def initials(full_name):
     parts = full_name.split()
     result = ""
@@ -34,13 +30,11 @@ def initials(full_name):
     return result
 
 
-# 5
 def is_palindrome_word(word):
     word = word.strip().lower()
     return word == word[::-1]
 
 
-# 6
 def mask_email(email):
     at = email.index("@")
 
@@ -55,7 +49,6 @@ def mask_email(email):
     return masked_name + domain
 
 
-# 7
 def middle(values):
     n = len(values)
 
@@ -65,7 +58,6 @@ def middle(values):
         return values[n // 2 - 1:n // 2 + 1]
 
 
-# 8
 def rotate_left(values, k):
     n = len(values)
 
@@ -77,7 +69,6 @@ def rotate_left(values, k):
     return values[k:] + values[:k]
 
 
-# 9
 def fib_list(n):
     result = []
 
@@ -93,7 +84,6 @@ def fib_list(n):
     return result
 
 
-# 10
 def collatz_steps(n):
     steps = 0
 
